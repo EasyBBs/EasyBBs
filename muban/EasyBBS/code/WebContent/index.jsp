@@ -21,7 +21,7 @@
 </head>
 
 <body style="padding-top: 70px;">
-<h1>苏婷是一个铁憨憨</h1>
+<h1>连雯怡是一个铁憨憨</h1>
     <nav class="navbar navbar-inverse navbar-fixed-top">
         <div class="container">
             <a class="navbar-brand" href="/index.html">欢迎来到EasyBBS</a>
