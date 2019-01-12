@@ -91,20 +91,20 @@
                 </td>
                 <br/><center><h1>吃鸡退休老干部疗养论坛</h1 > </center><br/>
                 <center> <h2> 浏览帖子 </h2> </center> <br/>
+                
               <% while (rs2.next()) {
                     name = rs2.getString(1);
                     subject = rs2.getString(3);
                     time = rs2.getString(5);
                     id = rs2.getInt(7);
-                    out.print("<table align=center width=800 border=4 cellspacing=4 cellpadding = 4 > "
-                            + "<tr> < td width = 150 height = 40 > "
-                            + "<font size = 5 > <a  href = detail.jsp ? id ="+ id + ">" 
+                    out.print("<table align=center width=800 border=4 cellspacing=4 cellpadding = 4> "
+                            + "<tr> <td width = 150 height = 40 > "
+                            + "<font size = 5 > <a  href = detail.jsp?id ="+ id + ">" 
                             + subject + 
-                            "</a></font></td><td width=150><font size=5>" + name +" </font > < / td > <td width = 150 > <font size = 5 > "+time
-                            +" <  / font > < / td > < / tr >" );
+                            "</a></font></td><td width=150><font size=5>" + name +" </font > </td> <td width = 150 > <font size = 5 > "+time
+                            +" </font> </td> </tr>" );
         }
-        }
-       catch (Exception e) {
+        }catch (Exception e) {
                 System.out.println(" 捕捉的错误 2");
             }
         %>
