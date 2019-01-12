@@ -32,9 +32,11 @@
             Statement sql;
             ResultSet rs;
             ResultSet rs2;
-            int id = Integer.parseInt(request.getParameter("id"));
+          
             int replyid = 0;
+          int   id=1;
             String condition = "select * from discuss where id = '" + id + "'";
+            System.out.println(condition);
             sql = con.createStatement();
             rs = sql.executeQuery(condition);
             out.print(
@@ -69,8 +71,7 @@
             java.util.Date currentTime = new java.util.Date();
             String time = simpleDateFormat.format(currentTime).toString();
         %>
-        <form id="myform" action="<%=request.getContextPath()%>/servlet/saveReve
-              rt" method="post" >
+        <form id="myform" action="<%=request.getContextPath()%>/saveRevert" method="post" >
             <input type="hidden" name="reply" value="<%=id%>">
             <input type="hidden" name="time1" value="<%=time%>">
             <%session.setAttribute("reply", id);%>
