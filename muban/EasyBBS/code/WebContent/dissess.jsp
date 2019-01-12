@@ -35,6 +35,7 @@
             Statement statement;
             ResultSet rs;
             int id=0;
+            String name=null, subject=null, time=null;
             int MaxNum = 5; // 每页容纳的主题论文的最大数目
             int count = 0, firstPage = 1, lastPage = 1, firstNum = 1, lastNum = 1, prePage = 1,nextPage = 2, pageNO = 1;
             /*
@@ -77,7 +78,6 @@
                 }
                 String condition2 = "select * from discuss where id between " + firstNum + " and " + lastNum;
                 ResultSet rs2 = statement.executeQuery(condition2);
-                String name, subject, time;
                 //int replyid;
                 %>
                
@@ -104,14 +104,13 @@
                %>
                 <table align=center width=800 border=4 cellspacing=4 cellpadding = 4> 
                        <tr> <td width = 150 height = 40 > 
-                         <font size = 5 > <a  href = "detail.jsp?id=<%=id %>">
-                            subject
+                         <font size = 5 > <a  href = "detail.jsp?id=<%=id%>">
+                            <%=subject %>
                          </a></font></td>
                          <td width=150>
-                             <font size=5> name</font > 
+                             <font size=5> <%=name %></font > 
                            </td> 
-                           <td width = 150 > <font size = 5 > 
-                                   time
+                           <td width = 150 > <font size = 5 > <%=time %>
                             </font> </td> </tr>
         
         <table align="center" width="800" border="5" cellspacing="5" cellpadding="
