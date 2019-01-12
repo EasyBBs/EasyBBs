@@ -19,4 +19,24 @@
     <servlet-name>UserDao</servlet-name>
     <url-pattern>/UserDao</url-pattern>
   </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>DB</display-name>
+    <servlet-name>DB</servlet-name>
+    <servlet-class>edu.cuit.easybbs.dao.DB</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>DB</servlet-name>
+    <url-pattern>/DB</url-pattern>
+  </servlet-mapping>
+   <servlet>
+    <description></description>
+    <display-name></display-name>
+    <servlet-name>addUser</servlet-name>
+    <servlet-class>edu.cuit.easybbs.web.addUser</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>addUser</servlet-name>
+    <url-pattern>/addUser</url-pattern>
+  </servlet-mapping>
 </web-app>

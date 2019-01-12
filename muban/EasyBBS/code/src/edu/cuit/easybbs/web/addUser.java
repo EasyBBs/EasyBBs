@@ -9,6 +9,8 @@ import edu.cuit.easybbs.dao.DB;
 import edu.cuit.easybbs.dao.registDao;
 import edu.cuit.easybbs.entity.user;
 import java.io.IOException;
+import java.io.PrintWriter;
+
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
@@ -56,6 +58,7 @@ public class addUser extends HttpServlet {
         try {
             Connection conn = null;
             conn = DB.getCon();
+     
             Statement st = conn.createStatement();
             ResultSet rs = st.executeQuery(
                     "select * from UserInfo where username ='" + username + "'  ");
@@ -65,15 +68,14 @@ public class addUser extends HttpServlet {
 // 将用户信息写入数据库
                 if (flag) { // 如果成功转发到 registsucces.jsp
                     HttpSession session = request.getSession(true);
-                    request.getSession().setAttribute("username", username
-                    );
+                    request.getSession().setAttribute("username", username);
                     request.getSession().setAttribute("email", email);
-                    response.sendRedirect(request.getContextPath() + "/registsuccess.jsp");
+                    response.sendRedirect(request.getContextPath()+"/registsuccess.jsp");
                 } else {
-                    response.sendRedirect(request.getContextPath() + "/errorpage.jsp");
+                    response.sendRedirect("/errorpage.jsp");
                 }
             } else {
-                response.sendRedirect(request.getContextPath() + "/exist.jsp");
+                response.sendRedirect("/exist.jsp");
             }
         } catch (SQLException e) {
             // TODO Auto-generated catch block

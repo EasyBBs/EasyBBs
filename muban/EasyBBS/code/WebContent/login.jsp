@@ -64,8 +64,7 @@
  return;
  }
  }
- myform.submit(); // 表单中最后 input 提交标签用的是 button 类型，首先不提交
-表单，在 js 判断表单项都不为空时 再提交表单。
+ myform.submit(); // 表单中最后 input 提交标签用的是 button 类型，首先不提交表单，在 js 判断表单项都不为空时 再提交表单。
  }
  </script>
  </body>

@@ -15,8 +15,7 @@
  <html>
  <head>
  <base href="<%=basePath%>">
-基于 Jsp 的简单论坛（BBS）的设计与实现
-18
+
  <title>My JSP 'index.jsp' starting page</title>
  <meta http-equiv="pragma" content="no-cache">
 <meta http-equiv="cache-control" content="no-cache">

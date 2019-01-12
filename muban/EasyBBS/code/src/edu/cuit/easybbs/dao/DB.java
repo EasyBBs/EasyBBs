@@ -8,10 +8,11 @@ public class DB {
 	public static Connection getCon() {
 		try {
 			Class.forName("com.mysql.jdbc.Driver");
+
 			String user = "root";
 			String pwd = "123123";
 			String url = "jdbc:mysql://localhost:3306/standlwy?useSSL=false";
-			conn = DriverManager.getConnection(url, user, pwd);
+	        conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/standlwy?characterEncoding=utf8&useSSL=true", "root", "123123");
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
