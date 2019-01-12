@@ -25,7 +25,7 @@
         <link rel="stylesheet" type="text/css" href="styles.css">
         -->
     </head>
-    <body background="image/backgroud1.jpg">
+    <body background="image/6.jpg">
         <%
             Connection con;
             con = DB.getCon();

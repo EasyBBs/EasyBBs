@@ -22,7 +22,7 @@
  <link rel="stylesheet" type="text/css" href="styles.css">
  -->
  </head>
- <body background="image/backgroud.jpg">
+    <body background="image/error.jpg">
  <br><br>
 <center> <h2>您所注册的用户名已存在，请重新注册！</h2>
 <br><br>

@@ -24,7 +24,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
  <link rel="stylesheet" type="text/css" href="styles.css">
  -->
  </head>
- <body background="image/backgroud1.jpg">
+    <body background="image/6.jpg">
  <br><br>
 <center> <h2>恭喜您，回复成功！</h2>
  <br><br>

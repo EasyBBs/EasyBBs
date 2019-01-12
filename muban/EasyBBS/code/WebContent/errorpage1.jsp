@@ -23,7 +23,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
         <link rel="stylesheet" type="text/css" href="styles.css">
         -->
     </head>
-    <body background="image/backgroud.jpg">
+    <body background="image/error.jpg">
         <br><br>
         <center><h2>发表失败！</h2>
             <!-- 保留原页面信息的脚本回退方式 -->

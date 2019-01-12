@@ -23,7 +23,7 @@
         <link rel="stylesheet" type="text/css" href="styles.css">
         -->
     </head>
-    <body background="image/backgroud1.jpg">
+    <body background="image/6.jpg">
         <%
             java.text.SimpleDateFormat simpleDateFormat = new java.text.SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
             java.util.Date currentTime = new java.util.Date();

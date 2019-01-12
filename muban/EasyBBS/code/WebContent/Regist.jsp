@@ -23,11 +23,11 @@
 <meta http-equiv="keywords" content="keyword1,keyword2,keyword3">
 <meta http-equiv="description" content="This is my page">
 </head>
-<body background="image/backgroud.jpg">
+<body background="image/5.jpeg">
 	<br>
 	<center>
 		<h1>
-			吃鸡退休老干部疗养论坛<br> Eat chicken retired veteran cadre convalescence
+			苏婷和连雯怡的情侣空间<br>Suting and Lianwenyi's love space.
 
 		</h1>
 		<h1>注 册 账 号</h1>

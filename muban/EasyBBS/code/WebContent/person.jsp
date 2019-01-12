@@ -28,7 +28,7 @@
 <link rel="stylesheet" type="text/css" href="styles.css">
  -->
 </head>
-<body background="image/backgroud1.jpg" bgcolor="green">
+    <body background="image/6.jpg">
 	<%
 		String username;
 		String password;

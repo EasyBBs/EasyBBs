@@ -26,7 +26,7 @@
 <link rel="stylesheet" type="text/css" href="styles.css">
  -->
  </head>
- <body background="image/backgroud.jpg">
+    <body background="image/6.jpg">
 <br><br>
  <center> <h2>恭喜您，注册成功！</h2>
  <br><br>

@@ -24,12 +24,12 @@
 
  </head>
 
- <body background="image/background.jpg">
+ <body background="image/4.jpg" >
      
  <br><br><br><br>
  <center>
- <div style="background-color: peachpuff;box-shadow: 10px 10px 5px #888888;width: 400px;opacity: 0.6" align="center">
- <h1 style="font-family:verdana"> 欢迎访问</h1>
+ <div style="background-color:#dceffe;box-shadow: 10px 10px 5px #888888;width: 400px;opacity: 0.6" align="center">
+ <h1 style="font-family:楷体"> 欢迎访问</h1>
  <h1>lwy和st的论坛空间
 <br> </h1>
 
