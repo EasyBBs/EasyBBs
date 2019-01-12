@@ -29,7 +29,7 @@
     <servlet-name>DB</servlet-name>
     <url-pattern>/DB</url-pattern>
   </servlet-mapping>
-   <servlet>
+  <servlet>
     <description></description>
     <display-name></display-name>
     <servlet-name>addUser</servlet-name>
@@ -38,5 +38,15 @@
   <servlet-mapping>
     <servlet-name>addUser</servlet-name>
     <url-pattern>/addUser</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>addTitle</display-name>
+    <servlet-name>addTitle</servlet-name>
+    <servlet-class>edu.cuit.easybbs.web.addTitle</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>addTitle</servlet-name>
+    <url-pattern>/addTitle</url-pattern>
   </servlet-mapping>
 </web-app>
