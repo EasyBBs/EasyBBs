@@ -52,7 +52,7 @@
                         + rs.getString(4) + "</td></tr></table>"
                 );
             }
-       //回复
+            //回复
             String condition2 = "select * from reply where reply = '" + id + "'";
             rs2 = sql.executeQuery(condition2);
             while (rs2.next()) {
@@ -98,14 +98,13 @@
             function check() {
                 var myform = document.getElementById("myform");
                 for (var i = 0; i < myform.length; i++) {
-                    if (myform.elements[i].value == "") {
+                    if (myform.elements[i].value === "") {
                         alert(myform.elements[i].title + "回复内容不能为空！");
                         myform.elements[i].focus();
                         return;
                     }
                 }
-                myform.submit(); // 表单中最后 input 提交标签用的是 button 类型，首先不提交
-                表单，在 js 判断表单项都不为空时 再提交表单。
+                myform.submit(); // 表单中最后 input 提交标签用的是 button 类型，首先不提交表单，在 js 判断表单项都不为空时 再提交表单。
             }
         </script>
     </body>
