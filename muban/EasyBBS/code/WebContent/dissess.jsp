@@ -2,6 +2,7 @@
     Document   : dissess
     Created on : 2019-1-12, 13:23:33
     Author     : 19310_000
+    浏览帖子
 --%>
 
 <%@page import="edu.cuit.easybbs.dao.DB"%>
@@ -31,28 +32,29 @@
         <%
             Connection con = null;
             con = DB.getCon();//连接数据库
-            Statement sql;
+            Statement statement;
             ResultSet rs;
             int MaxNum = 5; // 每页容纳的主题论文的最大数目
             int count = 0, firstPage = 1, lastPage = 1, firstNum = 1, lastNum = 1, prePage = 1,nextPage = 2, pageNO = 1;
             /*
-        lastPage 是最后一页，firstNum 是该页显示的第 1 条帖子，
-       lastNum 是该页显示的最后一条帖子，pageNo 是请求的页码
-       prePage 表示前一页， nextPage 表示后一页
+              lastPage 是最后一页，firstNum 是该页显示的第 1 条帖子，
+              lastNum 是该页显示的最后一条帖子，pageNo 是请求的页码
+              prePage 表示前一页， nextPage 表示后一页
              */
-            if (request.getParameter("pageNO") == null || request.getParameter(
-                    "pageNO").equals("")) {
+            if (request.getParameter("pageNO") == null || request.getParameter("pageNO").equals(""))
+            {
                 pageNO = 1;
             } else {
                 pageNO = Integer.parseInt(request.getParameter("pageNO"));
             }
             try {
-                String condition = "select * from discuss";
-                sql = con.createStatement();
-                rs = sql.executeQuery(condition);
+                String sql = "select * from discuss";
+                statement = con.createStatement();
+                rs = statement.executeQuery(sql);
                 while (rs.next()) {
                     count++; // 计算数据库里一共有多少帖子；
                 }
+                
                 lastPage = (count / MaxNum + 1);// 向下取整
                 if (pageNO <= 0) {
                     pageNO = 1;
@@ -73,22 +75,23 @@
                     nextPage = pageNO + 1;
                 }
                 String condition2 = "select * from discuss where id between " + firstNum + " and " + lastNum;
-                ResultSet rs2 = sql.executeQuery(condition2);
+                ResultSet rs2 = statement.executeQuery(condition2);
                 String name, subject, time;
                 int id;
-       //int replyid;
-                out.print(
-                "<table align=center width=800 border=4 cellspacing=4 cellpadding = 4 >"
-                        + " <tr> < td width = 150 height = 60 > "
-                        + "<font size = 5 > 帖子主题<  / font > < / td > "
-                        + "<td width = 150 > <font size = 5 > 发表者"
-                        + "<  / font > < / td >"
-                        + " <td  width = 150 > <font size = 5 > "
-                        + "发表时间 <  / font > "
-                        + "< / td > < / tr > ");
-               out.print("<br/><center><h1>吃鸡退休老干部疗养论坛</h1 > < / center > <br / >"
-                       + " <center> < h2 > 浏览帖子 <  / h2 > < / center > <br / >");
-        while (rs2.next()) {
+                //int replyid;
+                %>
+               
+                <table align=center width=800 border=4 cellspacing=4 cellpadding = 4 >
+                    <tr> < td width = 150 height = 60 > 
+                    <font size = 5 > 帖子主题</font> 
+                </tr> 
+                <td width = 150 > <font size = 5 > 发表者</font> 
+                </td>
+                <td  width = 150> <font size = 5> 发表时间 </font> 
+                </td>
+                <br/><center><h1>吃鸡退休老干部疗养论坛</h1 > </center><br/>
+                <center> <h2> 浏览帖子 </h2> </center> <br/>
+              <% while (rs2.next()) {
                     name = rs2.getString(1);
                     subject = rs2.getString(3);
                     time = rs2.getString(5);
