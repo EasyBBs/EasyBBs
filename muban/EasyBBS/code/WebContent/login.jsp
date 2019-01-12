@@ -42,7 +42,7 @@
  <strong>密 码：
 </strong><input type="password" name="password" size="25" maxlength="16">
  <br><br>
- <a href="regist.jsp"><input type="button" value="注册"></a>
+ <a href="Regist.jsp"><input type="button" value="注册"></a>
  <input type="button" value="登录" onclick="check()">
  <br><br>
 基于 Jsp 的简单论坛（BBS）的设计与实现
