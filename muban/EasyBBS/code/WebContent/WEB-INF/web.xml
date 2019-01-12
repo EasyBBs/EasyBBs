@@ -49,4 +49,14 @@
     <servlet-name>addTitle</servlet-name>
     <url-pattern>/addTitle</url-pattern>
   </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>saveRevert</display-name>
+    <servlet-name>saveRevert</servlet-name>
+    <servlet-class>edu.cuit.easybbs.web.saveRevert</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>saveRevert</servlet-name>
+    <url-pattern>/saveRevert</url-pattern>
+  </servlet-mapping>
 </web-app>
