@@ -81,7 +81,7 @@
                         输入你要回复的内容
                     </td>
                     <td>
-                        <textarea rows=15colsname=content></textarea>
+                        <textarea rows=15 colsname=content></textarea>
                     </td>
                 </tr>
                 <tr align=center>
