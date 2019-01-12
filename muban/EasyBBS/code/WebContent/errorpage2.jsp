@@ -25,7 +25,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
         . </head>
     <body background="image/backgroud1.jpg">
         <br><br>
-        <center><h2>发表失败！</h2>
+        <center><h2>发表失败！需要登入才能发帖！</h2>
             <!-- 保留原页面信息的脚本回退方式 -->
             <h3> <a href="javascript:history.back()">返回</a>
             </h3>

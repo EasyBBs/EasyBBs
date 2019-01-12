@@ -37,6 +37,7 @@ public class saveRevert extends HttpServlet {
 		request.setCharacterEncoding("utf-8");
 		response.setCharacterEncoding("utf-8");
 		String name = (String) request.getSession().getAttribute("username");
+		System.out.println(name);
 		String reply = request.getParameter("reply");
 		String content = request.getParameter("content");
 		String time = request.getParameter("time1");

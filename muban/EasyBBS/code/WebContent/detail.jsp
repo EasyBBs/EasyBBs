@@ -34,9 +34,9 @@
             ResultSet rs2;
           
             int replyid = 0;
-          int   id=1;
+            int  id=Integer.parseInt(request.getParameter(  "id"  ));
             String condition = "select * from discuss where id = '" + id + "'";
-            System.out.println(condition);
+           
             sql = con.createStatement();
             rs = sql.executeQuery(condition);
             out.print(
@@ -81,7 +81,7 @@
                         输入你要回复的内容
                     </td>
                     <td>
-                        <textarea rows=15 colsname=content></textarea>
+                        <textarea rows=15 name=content></textarea>
                     </td>
                 </tr>
                 <tr align=center>
