@@ -37,10 +37,10 @@
         <center><h2>发表帖子</h2></center>
         <br />
         <center>
-            <form id="myform" action="<%=request.getContextPath()%>/servlet/addTitle" method="post" >
+            <form id="myform" action="<%=request.getContextPath()%>/addTitle" method="post" >
                 <table width="700" height="400" border="5" cellspacing="5" cellpadding="5">
                     <tr >
-                        <td>姓名 </td><td><input type="text" size=60 namename=name></td>
+                        <td>姓名 </td><td><input type="text" size=60 name="name"></td>
                     </tr>
                     <tr >
                         <td>E-mail</td><td><input type=text size="60" name="email"></td>
