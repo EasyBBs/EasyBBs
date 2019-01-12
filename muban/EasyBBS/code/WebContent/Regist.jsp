@@ -27,8 +27,7 @@ String path = request.getContextPath();
 Eat chicken retired veteran cadre convalescence BBS</h1>
 <h1>注 册 账 号</h1>
  <h2>请填写以下资料</h2>
- <form id="myform" method="post" action="<%=request.getContextPath()%>/serv
-let/addUser">
+ <form id="myform" method="post" action="addUser">
  <strong>用户名：
 </strong><input type="text" name="username" size="25" maxlength="16">
 <br><br>
@@ -61,8 +60,7 @@ let/addUser">
  return;
  }
  }
- myform.submit(); // 表单中最后 input 提交标签用的是 button 类型，首先不提交
-表单，在 js 判断表单项都不为空时 再提交表单。
+ myform.submit(); // 表单中最后 input 提交标签用的是 button 类型，首先不提交表单，在 js 判断表单项都不为空时 再提交表单。
  }
  </script>
  </body>
