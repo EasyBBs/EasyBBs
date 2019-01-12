@@ -2,6 +2,7 @@
     Document   : Regist
     Created on : 2019-1-12, 10:12:03
     Author     : 19310_000
+    用户注册界面
 --%>
 
 <%@ page language="java" import="java.util.*" pageEncoding="UTF-8"%>
@@ -40,8 +41,6 @@ let/addUser">
  <br><br>
  <strong>电 话：
 </strong><input type ="text" name="telephone" size ="25" >
-基于 Jsp 的简单论坛（BBS）的设计与实现
-17
 <br><br>
  <strong>邮 箱：
 </strong><input type="text" name="email" size="25" maxlength="100">

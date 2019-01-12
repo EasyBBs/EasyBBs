@@ -2,6 +2,7 @@
     Document   : registsucces
     Created on : 2019-1-12, 10:16:23
     Author     : 19310_000
+    用户注册成功界面提示
 --%>
 
 <%@page import="java.io.PrintWriter"%>
