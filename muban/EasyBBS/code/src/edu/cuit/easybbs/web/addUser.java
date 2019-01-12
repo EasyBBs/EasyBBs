@@ -70,12 +70,12 @@ public class addUser extends HttpServlet {
                     HttpSession session = request.getSession(true);
                     request.getSession().setAttribute("username", username);
                     request.getSession().setAttribute("email", email);
-                    response.sendRedirect(request.getContextPath()+"/registsuccess.jsp");
+                    response.sendRedirect(request.getContextPath()+"/registsucces.jsp");
                 } else {
-                    response.sendRedirect("/errorpage.jsp");
+                    response.sendRedirect(request.getContextPath()+"/errorpage.jsp");
                 }
             } else {
-                response.sendRedirect("/exist.jsp");
+                response.sendRedirect(request.getContextPath()+"/exist.jsp");
             }
         } catch (SQLException e) {
             // TODO Auto-generated catch block
