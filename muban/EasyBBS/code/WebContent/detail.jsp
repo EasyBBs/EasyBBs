@@ -15,7 +15,7 @@
 <html>
     <head>
         <base href="<%=basePath%>">
-        <title>My JSP 'errorpage.jsp' starting page</title>
+        <title>帖子</title>
         <meta http-equiv="pragma" content="no-cache">
         <meta http-equiv="cache-control" content="no-cache">
         <meta http-equiv="expires" content="0">
@@ -24,8 +24,15 @@
         <!--
         <link rel="stylesheet" type="text/css" href="styles.css">
         -->
+        <style>
+
+body {
+			background-repeat: no-repeat;	
+			background-position: 140% 0%;
+}
+</style>
     </head>
-    <body background="image/6.jpg">
+    <body background="image/mao1.jpg">
         <%
             Connection con;
             con = DB.getCon();
@@ -40,7 +47,7 @@
             sql = con.createStatement();
             rs = sql.executeQuery(condition);
             out.print(
-                    "<br/><center><h1>吃鸡退休老干部疗养论坛</h1></center>"
+                    "<br/><center><h1>苏婷和连雯怡的情侣空间</h1></center>"
                     + "<br/><center><h2>浏览帖子</h2></center><br/>");
             while (rs.next()) {
                 out.print("<table align=center width=800 border=5 cellspacing=5 cellpadding=5><tr><td width=161>"

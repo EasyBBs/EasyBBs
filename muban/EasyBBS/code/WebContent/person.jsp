@@ -18,7 +18,7 @@
 <html>
 <head>
 <base href="<%=basePath%>">
-<title>My JSP 'errorpage.jsp' starting page</title>
+<title>用户信息</title>
 <meta http-equiv="pragma" content="no-cache">
 <meta http-equiv="cache-control" content="no-cache">
 <meta http-equiv="expires" content="0">
@@ -27,8 +27,14 @@
 <!--
 <link rel="stylesheet" type="text/css" href="styles.css">
  -->
+ <style>
+body {
+	background-repeat: no-repeat;
+	background-position: -30% 50%;
+}
+</style>
 </head>
-    <body background="image/6.jpg">
+    <body background="image/mao3.jpg">
 	<%
 		String username;
 		String password;
@@ -60,7 +66,7 @@
 
 	<br />
 	<center>
-		<h1>吃鸡退休老干部疗养论坛</h1>
+		<h1>苏婷和连雯怡的情侣空间</h1>
 	</center>
 	<br />
 	<center>
@@ -71,48 +77,48 @@
 		<table width="500" height="300" border="5" cellspacing="5"
 			cellpadding="5">
 			<tr>
-				<td width="129"><font size="5" color="#FFFFFF">用户名</font></td>
-				<td width="322"><font size="5" color="#FFFFFF">
+				<td width="129"><font size="5" >用户名</font></td>
+				<td width="322"><font size="5" >
 						<%
 							out.println(username);
 						%>
 				</font></td>
 			</tr>
 			<tr>
-				<td><font size="5" color="#FFFFFF">密 码</font></td>
-				<td><font size="5" color="#FFFFFF">
+				<td><font size="5">密 码</font></td>
+				<td><font size="5" >
 						<%
 							out.println(password);
 						%>
 				</font></td>
 			</tr>
 			<tr>
-				<td><font size="5" color="#FFFFFF">性 别</font></td>
-				<td><font size="5" color="#FFFFFF">
+				<td><font size="5" >性 别</font></td>
+				<td><font size="5" >
 						<%
 							out.println(sex);
 						%>
 				</font></td>
 			</tr>
 			<tr>
-				<td><font size="5" color="#FFFFFF">年 龄</font></td>
-				<td><font size="5" color="#FFFFFF">
+				<td><font size="5" >年 龄</font></td>
+				<td><font size="5" >
 						<%
 							out.println(age);
 						%>
 				</font></td>
 			</tr>
 			<tr>
-				<td><font size="5" color="#FFFFFF">电 话</font></td>
-				<td><font size="5" color="#FFFFFF">
+				<td><font size="5" >电 话</font></td>
+				<td><font size="5" >
 						<%
 							out.println(telephone);
 						%>
 				</font></td>
 			</tr>
 			<tr>
-				<td><font size="5" color="#FFFFFF">邮 箱</font></td>
-				<td><font size="5" color="#FFFFFF">
+				<td><font size="5" >邮 箱</font></td>
+				<td><font size="5" >
 						<%
 							out.println(email);
 						%>

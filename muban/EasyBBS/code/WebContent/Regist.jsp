@@ -16,39 +16,36 @@
 <html>
 <head>
 <base href="<%=basePath%>">
-<title>My JSP 'index.jsp' starting page</title>
+<title>注册</title>
 <meta http-equiv="pragma" content="no-cache">
 <meta http-equiv="cache-control" content="no-cache">
 <meta http-equiv="expires" content="0">
 <meta http-equiv="keywords" content="keyword1,keyword2,keyword3">
 <meta http-equiv="description" content="This is my page">
+<style>a{text-decoration:none}</style>
 </head>
 <body background="image/5.jpeg">
 	<br>
 	<center>
 		<h1>
 			苏婷和连雯怡的情侣空间<br>Suting and Lianwenyi's love space.
-
 		</h1>
 		<h1>注 册 账 号</h1>
 		<h2>请填写以下资料</h2>
 		<form id="myform" method="post"
 			action="<%=request.getContextPath()%>/addUser">
 			<strong>用户名： </strong><input type="text" name="username" size="25"
-				maxlength="16"> <br>
-			<br> <strong>密 码： </strong><input type="password"
-				name="password" size="25" maxlength="16"> <br>
-			<br> <strong>性 别：</strong><input type="text" name="sex"
-				size="25"> <br>
-			<br> <strong>年 龄：</strong><input type="text" name="age"
-				size="25"> <br>
-			<br> <strong>电 话： </strong><input type="text" name="telephone"
-				size="25"> <br>
-			<br> <strong>邮 箱： </strong><input type="text" name="email"
-				size="25" maxlength="100"> <br>
-			<br> <input type="reset" value="重 置"> <input
+				maxlength="16"> <br> <br> <strong>&nbsp;&nbsp;&nbsp;密
+				码： </strong><input type="password" name="password" size="25" maxlength="16">
+			<br> <br> <strong>&nbsp;&nbsp;&nbsp;性 别：</strong><input
+				type="text" name="sex" size="25"> <br> <br> <strong>&nbsp;&nbsp;&nbsp;年
+				龄：</strong><input type="text" name="age" size="25"> <br> <br>
+			<strong>&nbsp;&nbsp;&nbsp;电 话： </strong><input type="text"
+				name="telephone" size="25"> <br> <br> <strong>&nbsp;&nbsp;&nbsp;邮
+				箱： </strong><input type="text" name="email" size="25" maxlength="100">
+			<br> <br> <input type="reset" value="重 置"> <input
 				type="button" value="注 册" onclick="check()"><br> <a
-				href=login.jsp>返回前一页 ...</a>
+				href=login.jsp>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;返回到登录界面 ...</a>
 		</form>
 	</center>
 	<script type="text/javascript">

@@ -14,7 +14,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 <html>
 <head>
 <base href="<%=basePath%>">
- <title>My JSP 'index.jsp' starting page</title>
+ <title>回帖成功</title>
  <meta http-equiv="pragma" content="no-cache">
 <meta http-equiv="cache-control" content="no-cache">
 <meta http-equiv="expires" content="0">
@@ -31,7 +31,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
  <br><br>
 <h3><a href=detail.jsp?id=<%=session.getAttribute("reply")%>>返回
 </a></h3>
-32</center>
+</center>
  </body>
  </html>
 

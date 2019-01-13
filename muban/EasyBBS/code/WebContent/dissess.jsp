@@ -20,7 +20,7 @@
 <html>
 <head>
 <base href="<%=basePath%>">
-<title>My JSP 'dissess.jsp' starting page</title>
+<title>帖子列表</title>
 <meta http-equiv="pragma" content="no-cache">
 <meta http-equiv="cache-control" content="no-cache">
 <meta http-equiv="expires" content="0">
@@ -29,8 +29,15 @@
 <!--
        <link rel="stylesheet" type="text/css" href="styles.css">
         -->
+<style>
+
+body {
+			background-repeat: no-repeat;	
+			background-position: 140% 0%;
+}
+</style>
 </head>
-    <body background="image/6.jpg">
+<body background="image/mao1.jpg">
 	<%
 		Connection con = null;
 		con = DB.getCon();//连接数据库
@@ -92,7 +99,7 @@
 		</tr>
 		<br />
 		<center>
-			<h1>吃鸡退休老干部疗养论坛</h1>
+			<h1>苏婷和连雯怡的情侣空间</h1>
 		</center>
 		<br />
 		<center>
